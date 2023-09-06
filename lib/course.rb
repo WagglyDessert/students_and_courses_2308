@@ -1,6 +1,6 @@
 class Course
   attr_reader :name, :capacity, :students
-  def initialize(name, capacity)
+  def initialize(name, capacity = 0)
     @name = name
     @capacity = capacity
     @students = []
