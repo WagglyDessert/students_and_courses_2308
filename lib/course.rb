@@ -5,21 +5,16 @@ class Course
     @capacity = capacity
     @students = []
   end
-
+  
   def full?
-    a = @students.count
-    b = @capacity
-    if a == nil
-      return false
-    elsif a < b
-      return false
+    if @students.count < @capacity
+      false
     else
-      return true
+      true
     end
   end
 
   def enroll(student)
     @students << student
   end
-
 end
